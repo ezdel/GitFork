@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Star Wars RPG Game</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/full.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">  
+                <img id = "Title" src="assets/images/Title.jpg"><br>
+                <img id = "secondTitle" src ="assets/images/Title2.jpg">
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+            <img id = "galaxy" src ="assets/images/galaxy.jpg"> 
+                <h3 id="intro">In a galaxy far far away...</h3>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>  
+        
+        <br>
+        
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">  
+                
+                <img id = "game" src ="assets/images/game.jpg"> 
+
+                <br>
+                
+                <h4 id="instructions">Select your character and choose your defender. Defeat your enemies by decreasing their HP using the attack button!</h4>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>      
+    </div>  
+
+    <div class="footer">
+    <h4 id="music">Music:</h4>
+            <audio id="player" loop="loop" autoplay="autoplay" controls="controls">
+                  <source src="assets/audio/Vader.mp3" type="audio/mpeg"/>
+            </audio>
+    </div>
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.full {
+    background: url('https://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+body,.row{
+	background-color: transparent;
+}
+.row{
+	background-color: transparent;
+	border-style: solid;
+	border-width: thick;
+	border-color: gray;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+#Title{
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#secondTitle{
+	width: 500px;
+	margin-left: 90px;
+	
+}
+#intro,#galaxy,#game{
+	width: 500px;
+}
+
+#intro{
+	color: blue;
+}
+#instructions{
+	color: white;
+	text-align: center;
+}
+#music{
+	color: white;
+}
+#button{
+	margin-left: auto;
+	margin-right: auto;
+	color: gray;
+}
