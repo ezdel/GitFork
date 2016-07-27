@@ -48,7 +48,29 @@ function choseCharacter(clicked_id){
 	}
 }
 
+// some attack/counter function
 // function attack(player){
-// 	Defender.HP -= Main.attack;
+// 	while(Defender.HP !== 0){
+// 		Defender.HP -= Main.attack;
+// 		Main.HP -= Defender.counter;
+// 		Main.attack = Main.attack*2;
+//		$('# the main character's score div).html(Main.HP);
+//		$('# the defender's score div).html(Defender.HP);
+// 	}
+// some if code: if no defender selected: $('#instructions').html("No enemy here.");
 // }
 
+
+// if else statemest after results
+// if (Defender.HP === 0){
+// $('#instructions').html("Select another Opponent");
+// }
+// else{
+// 	$('#instructions').html("GAME OVER");
+// }
+
+// function reset{
+// 	isMainChosen = false;
+//	Main = '';
+//	Defender = '';
+// }
