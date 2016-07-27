@@ -26,7 +26,7 @@ var characters = {
 		img_url: "assets/images/yoda.jpg"
 	},
 	vader: {
-		displayname: 'Darth Vader',
+		displayName: 'Darth Vader',
 		js_name: 'vader',
 		hp: 180,
 		counter: function(enemy) {
@@ -38,7 +38,7 @@ var characters = {
 		img_url: "assets/images/vader.jpg"
 	},
 	maul: {
-		displayname: 'Darth Maul',
+		displayName: 'Darth Maul',
 		js_name: 'maul',
 		hp: 160,
 		counter: function(enemy) {
@@ -108,13 +108,20 @@ function chooseCharacter(clickedElement){
 
 	} else {
 		if (isDefenderChosen === false) {
+
 			$defender = $(clickedElement);
 			$defender.removeClass("col-sm-3");
-			$defenderContainer = $("<div id='defender_container' class='col-sm-4'>");
-			$defenderContainer.append($defender);
-			$("#fight_container").append($defenderContainer);
-			$defender.off( "click");
 
+			if ($("#defender_container").length <= 0) {
+				$defenderContainer = $("<div id='defender_container' class='col-sm-4'>");
+				$defenderContainer.append($defender);
+				$("#fight_container").append($defenderContainer);
+			} else {
+				$defenderContainer.append($defender);
+			}
+
+			$defender.off( "click");
+			
 			$('#instructions').html("<h1>Click the attack button to defeat your opponent!</h1> <button id='attack_button'>ATTACK</button>");
 
 			$("#attack_button").on("click", function(){
