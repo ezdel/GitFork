@@ -40,87 +40,59 @@ $(character3).append(vader.name +  '<br><img src="assets/images/vader.jpg" heigh
 var character4 = document.getElementById('maulButton');
 $(character4).append(maul.name +  '<br><img src="assets/images/maul.jpg" height="150px" width="150px"> <br>' + maul.hp);
 
-//var main, defender, mainID, defenderID;
-//var isMainChosen = false;
+// function for selecting characters
+var isMainChosen = false;
+var main, defender, mainID, defenderID;
+$('.charButton').on('click', function () {
+   if (isMainChosen === false) {
+   		$('#mainCharacterContainer').append(this);
+   		$('#instructions').html("Select your Opponent!");
+   		isMainChosen = true;
+   		return isMainChosen;
+   		mainID = this.id;
+} 	
+	else {
+		$('#defenderCharacterContainer').append(this);
+		$('#instructions').html("Click the attack button to defeat your opponent!");
+		defenderID = this.id;
+	}
 
-function chooseCharacter(){
-	$('#mainCharacterContainer').on("click",function(){
+	main = linkCharacter(mainID);
+	defender = linkCharacter(defenderID);
+});
 
-		if($('#mainCharacterContainer').length === 0){
-			$('#mainCharacterContainer').append(this);
-			$('#instructions').html("Select your Opponent!");
-			mainID = this.id;
-		}
-		else{
-			$('#defenderCharacterContainer').append(defender);
-			$('#instructions').html("Click the attack button to defeat your opponent!");
-			defenderID = this.id;
-		}
-	});
+function linkCharacter(id) {
+
+    var objChar;
+
+    switch (id) {
+        case "character1":
+            objChar = character1;
+            break;
+        case "character2":
+            objChar = character2;
+            break;
+        case "character3":
+            objChar = character3;
+            break;
+        case "character4":
+            objChar = character4;
+            break;
+    }
+
+    return objChar;
 }
 
-// if(isMainChosen === false){
-// 	if(clicked_id === 'obiButton'){
-// 		character1 = clicked_id;
-// 		$('#mainCharacterContainer').append(character1);
-// 		$('#instructions').html("Select your Opponent!");
-// 		isMainChosen = true;
-// 		return isMainChosen;
+// function for when attach button is clicked
+$('.btn btn-danger btn-sm').on('click', function(){
+	while(defender.hp !== 0){
+		defender.hp -= main.attack;
+		main.hp -= defender.counter;
+		main.attack = main.attack*2;
+	}
+	console.log(main.attack);
 
-// 	}
-// 	else if(clicked_id === 'yodaButton'){
-// 		character2 = clicked_id;
-// 		$('#mainCharacterContainer').append(character2);
-// 		$('#instructions').html("Select your Opponent!");
-// 		isMainChosen = true;
-// 		return isMainChosen;
-// 	}
-
-// 	else if(clicked_id === 'vaderButton'){
-// 		character3 = clicked_id;
-// 		$('#mainCharacterContainer').append(character3);
-// 		$('#instructions').html("Select your Opponent!");
-// 		isMainChosen = true;
-// 		return isMainChosen;
-// 	}
-// 	else(clicked_id === 'maulButton'){
-// 		character3 = clicked_id;
-// 		$('#mainCharacterContainer').append(character4);
-// 		$('#instructions').html("Select your Opponent!");
-// 		isMainChosen = true;
-// 		return isMainChosen;
-// 	}
-// }
-// 	else{
-// 		if(clicked_id === 'obiButton'){
-// 			character1 = clicked_id;
-// 			$('#defenderCharacterContainer').append(character1);
-// 			$('#instructions').html("Click the attack button to defeat your opponent!");
-			
-
-// 		}
-// 		else if(clicked_id === 'yodaButton'){
-// 			character2 = clicked_id;
-// 			$('#defenderCharacterContainer').append(character1);
-// 			$('#instructions').html("Click the attack button to defeat your opponent!");
-// 		}
-// 		else if(clicked_id === 'vaderButton'){
-// 			character3 = clicked_id;
-// 			$('#defenderCharacterContainer').append(character1);
-// 			$('#instructions').html("Click the attack button to defeat your opponent!");
-			
-// 		}
-// 		else(clicked_id === 'maulButton'){
-// 			character3 = clicked_id;
-// 			$('#defenderCharacterContainer').append(character1);
-// 			$('#instructions').html("Click the attack button to defeat your opponent!");
-			
-// 		}	
-// 	}
-// }
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+});
 
 
 
