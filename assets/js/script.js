@@ -40,8 +40,8 @@ $(character3).append(vader.name +  '<br><img src="assets/images/vader.jpg" heigh
 var character4 = document.getElementById('maulButton');
 $(character4).append(maul.name +  '<br><img src="assets/images/maul.jpg" height="150px" width="150px"> <br>' + maul.hp);
 
-var main, defender, mainID, defenderID;
-var isMainChosen = false;
+//var main, defender, mainID, defenderID;
+//var isMainChosen = false;
 
 function chooseCharacter(){
 	$('#mainCharacterContainer').on("click",function(){
