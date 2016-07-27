@@ -22,8 +22,7 @@
 
 <body>
 
-    <div class="container">
-
+    <div class="container">   
 
     <!-- Row that contains the Star Wars Title and RPG Description -->
         <div class="row">
@@ -66,71 +65,15 @@
         <br>
 
     <!--    This is the battle area: Selected Character VS Defender -->
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-3">
-                <div id="main_character_container"><h4 id="names">Your Character</h4></div>
-            </div>
-
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-danger btn-sm" onClick="attack(Defender)">Attack</button>
-                <h4 id="mainSummary"></h4><br>
-                <h4 id="defenderSummary"></h4>
-
-            </div>
-            <div class="col-sm-3">
-                <div id="defender"><h4 id="names">Defender</h4></div>
-            </div>
-            <div class="col-sm-2"></div>
-            
-           
-        </div>    
-
+        <div id="fight_container" class="row"></div>
         <br>
     <!-- This is the game container. Each character has his own div to contain the name and his score -->
-        <div class="row">
-            <div class="col-sm-3">
-                <div id="obidiv">
-                    <button id="ObiButton" class="character">
-                        <h5 id ="names">Obi-Wan Kenobi</h5>
-                        <img id = "Obi" src ="assets/images/obiwan.jpg">
-                        <div id="obiScore">150</div>
-                    </button>
-                </div>
-            </div>
+        <div id="game_container" class="row">
+        </div>  
 
-            <div class="col-sm-3">
-                <div id="yodadiv">
-                    <button id="YodaButton" class="character">
-                        <h5 id ="names">Yoda</h5>
-                        <img id = "Yoda" src ="assets/images/yoda.jpg">
-                        <div id="yodaScore">200</div>
-                    </button>
-                </div>
-            </div>
 
-            <div class="col-sm-3">
-                 <div id="vaderdiv">
-                    <button id="VaderButton" class="character">
-                        <h5 id ="names">Darth Vader</h5>
-                        <img id = "Darth" src ="assets/images/vader.jpg">
-                        <div id="vaderScore">180</div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                 <div id="mauldiv">
-                    <button id="MaulButton" class="character">
-                        <h5 id ="names">Darth Maul</h5>
-                        <img id = "maul" src ="assets/images/maul.jpg">
-                        <div id="maulScore">160</div>
-                    </button>
-                </div>
-            </div>
-
-        </div>        
     </div>  
+
 
     <!-- At the bottom of the page is the music  -->
   <!--   <div class="footer">

@@ -15,6 +15,7 @@
 }
 body,.row{
 	background-color: transparent;
+	color: white;
 }
 .row{
 	background-color: transparent;
@@ -64,13 +65,7 @@ body,.row{
 	margin-right: auto;
 
 }
-#Obi, #Yoda, #Darth, #maul{
-	width: 150px;
-	height: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
+
 #ObiButton, #YodaButton{
 	background-color: blue;
 }
@@ -80,4 +75,8 @@ body,.row{
 #obiScore, #yodaScore, #vaderScore, #maulScore{
 	color: white;
 	text-decoration-style: bold;
+}
+
+.health_display {
+	font-size: 30px;
 }
