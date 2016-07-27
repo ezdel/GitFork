@@ -13,7 +13,7 @@
     <title>Star Wars RPG Game</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link href="assets/css/full.css" rel="stylesheet">
@@ -23,6 +23,9 @@
 <body>
 
     <div class="container">
+
+
+    <!-- Row that contains the Star Wars Title and RPG Description -->
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-6">  
@@ -34,6 +37,7 @@
 
         <br>
         
+     <!-- Row that contains "in a galaxay far far away" image and translation -->
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
@@ -45,6 +49,7 @@
         
         <br>
         
+    <!-- Row that contains the Game Rules/instructions image -->
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">  
@@ -53,23 +58,89 @@
 
                 <br>
                 
-                <h4 id="instructions">Select your character and choose your defender. Defeat your enemies by decreasing their HP using the attack button!</h4>
+                <h4 id="instructions">Select your Main Character!</h4>
             </div>
             <div class="col-sm-3"></div>
-        </div>      
+        </div>  
+
+        <br>
+
+    <!--    This is the battle area: Selected Character VS Defender -->
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+                <div id="main"><h4 id="names">Your Character</h4></div>
+            </div>
+
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-danger btn-sm" onClick="attack(Defender)">Attack</button>
+                <h4 id="mainSummary"></h4><br>
+                <h4 id="defenderSummary"></h4>
+
+            </div>
+            <div class="col-sm-3">
+                <div id="defender"><h4 id="names">Defender</h4></div>
+            </div>
+            <div class="col-sm-2"></div>
+            
+           
+        </div>    
+
+        <br>
+    <!-- This is the game container. Each character has his own div to contain the name and his score -->
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="obidiv">
+                    <button id="ObiButton" onClick="choseCharacter(this.id)">
+                        <h5 id ="names">Obi-Wan Kenobi</h5>
+                        <img id = "Obi" src ="assets/images/obiwan.jpg">
+                        <div id="obiScore">150</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div id="yodadiv">
+                    <button id="YodaButton" onClick="choseCharacter(this.id)">
+                        <h5 id ="names">Yoda</h5>
+                        <img id = "Yoda" src ="assets/images/yoda.jpg">
+                        <div id="yodaScore">200</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                 <div id="vaderdiv">
+                    <button id="VaderButton" onClick="choseCharacter(this.id)">
+                        <h5 id ="names">Darth Vader</h5>
+                        <img id = "Darth" src ="assets/images/vader.jpg">
+                        <div id="vaderScore">180</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                 <div id="mauldiv">
+                    <button id="MaulButton" onClick="choseCharacter(this.id)">
+                        <h5 id ="names">Darth Maul</h5>
+                        <img id = "maul" src ="assets/images/maul.jpg">
+                        <div id="maulScore">160</div>
+                    </button>
+                </div>
+            </div>
+
+        </div>        
     </div>  
 
-    <div class="footer">
+    <!-- At the bottom of the page is the music  -->
+  <!--   <div class="footer">
     <h4 id="music">Music:</h4>
             <audio id="player" loop="loop" autoplay="autoplay" controls="controls">
                   <source src="assets/audio/Vader.mp3" type="audio/mpeg"/>
             </audio>
-    </div>
+    </div> -->
     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 

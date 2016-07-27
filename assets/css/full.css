@@ -1,15 +1,11 @@
-/*!
+/*/*!
  * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
+ /*Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) 
+*/
 .full {
     background: url('https://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -43,12 +39,15 @@ body,.row{
 #intro,#galaxy,#game{
 	width: 500px;
 }
+#battle{
+	width: 300px;
+}
 
 #intro{
 	color: blue;
 }
 #instructions{
-	color: white;
+	color: yellow;
 	text-align: center;
 }
 #music{
@@ -58,4 +57,27 @@ body,.row{
 	margin-left: auto;
 	margin-right: auto;
 	color: gray;
+}
+#names{
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#Obi, #Yoda, #Darth, #maul{
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ObiButton, #YodaButton{
+	background-color: blue;
+}
+#VaderButton,#MaulButton{
+	background-color: red;
+}
+#obiScore, #yodaScore, #vaderScore, #maulScore{
+	color: white;
+	text-decoration-style: bold;
 }
