@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-3">
-                <div id="main"><h4 id="names">Your Character</h4></div>
+                <div id="main_character_container"><h4 id="names">Your Character</h4></div>
             </div>
 
             <div class="col-sm-2">
@@ -91,7 +91,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div id="obidiv">
-                    <button id="ObiButton" onClick="choseCharacter(this.id)">
+                    <button id="ObiButton" class="character">
                         <h5 id ="names">Obi-Wan Kenobi</h5>
                         <img id = "Obi" src ="assets/images/obiwan.jpg">
                         <div id="obiScore">150</div>
@@ -101,7 +101,7 @@
 
             <div class="col-sm-3">
                 <div id="yodadiv">
-                    <button id="YodaButton" onClick="choseCharacter(this.id)">
+                    <button id="YodaButton" class="character">
                         <h5 id ="names">Yoda</h5>
                         <img id = "Yoda" src ="assets/images/yoda.jpg">
                         <div id="yodaScore">200</div>
@@ -111,7 +111,7 @@
 
             <div class="col-sm-3">
                  <div id="vaderdiv">
-                    <button id="VaderButton" onClick="choseCharacter(this.id)">
+                    <button id="VaderButton" class="character">
                         <h5 id ="names">Darth Vader</h5>
                         <img id = "Darth" src ="assets/images/vader.jpg">
                         <div id="vaderScore">180</div>
@@ -121,7 +121,7 @@
 
             <div class="col-sm-3">
                  <div id="mauldiv">
-                    <button id="MaulButton" onClick="choseCharacter(this.id)">
+                    <button id="MaulButton" class="character">
                         <h5 id ="names">Darth Maul</h5>
                         <img id = "maul" src ="assets/images/maul.jpg">
                         <div id="maulScore">160</div>
@@ -140,7 +140,8 @@
             </audio>
     </div> -->
     <!-- jQuery -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-minified.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
