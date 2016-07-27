@@ -64,20 +64,20 @@ body,.row{
 	margin-right: auto;
 
 }
-#Obi, #Yoda, #Darth, #maul{
+#obi, #yoda, #darth, #maul{
 	width: 150px;
 	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
-#ObiButton, #YodaButton{
+#obiButton, #yodaButton{
 	background-color: blue;
 }
-#VaderButton,#MaulButton{
+#vaderButton,#maulButton{
 	background-color: red;
 }
-#obiScore, #yodaScore, #vaderScore, #maulScore{
+#obiHp, #yodaHp, #vaderHp, #maulHp{
 	color: white;
 	text-decoration-style: bold;
 }

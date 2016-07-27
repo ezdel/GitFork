@@ -69,17 +69,17 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-3">
-                <div id="main"><h4 id="names">Your Character</h4></div>
+                <div id="mainCharacterContainer"><h4 id="names">Your Character</h4></div>
             </div>
 
             <div class="col-sm-2">
-                <button type="button" class="btn btn-danger btn-sm" onClick="attack(Defender)">Attack</button>
+                <button type="button" class="btn btn-danger btn-sm">Attack</button>
                 <h4 id="mainSummary"></h4><br>
-                <h4 id="defenderSummary"></h4>
+                <h4 id="defenderSummary">
 
             </div>
             <div class="col-sm-3">
-                <div id="defender"><h4 id="names">Defender</h4></div>
+                <div id="defenderCharacterContainer"><h4 id="names">Defender</h4></div>
             </div>
             <div class="col-sm-2"></div>
             
@@ -87,50 +87,32 @@
         </div>    
 
         <br>
-    <!-- This is the game container. Each character has his own div to contain the name and his score -->
+    <!-- This is the game container. Each character is appended into their designated button container with their object properties -->
         <div class="row">
             <div class="col-sm-3">
-                <div id="obidiv">
-                    <button id="ObiButton" onClick="choseCharacter(this.id)">
-                        <h5 id ="names">Obi-Wan Kenobi</h5>
-                        <img id = "Obi" src ="assets/images/obiwan.jpg">
-                        <div id="obiScore">150</div>
-                    </button>
+                <div id="obiDiv" >
+                    <button id="obiButton"></button>
                 </div>
             </div>
 
             <div class="col-sm-3">
-                <div id="yodadiv">
-                    <button id="YodaButton" onClick="choseCharacter(this.id)">
-                        <h5 id ="names">Yoda</h5>
-                        <img id = "Yoda" src ="assets/images/yoda.jpg">
-                        <div id="yodaScore">200</div>
-                    </button>
+                <div id="yodaDiv">
+                    <button id="yodaButton"></button>
                 </div>
             </div>
 
             <div class="col-sm-3">
-                 <div id="vaderdiv">
-                    <button id="VaderButton" onClick="choseCharacter(this.id)">
-                        <h5 id ="names">Darth Vader</h5>
-                        <img id = "Darth" src ="assets/images/vader.jpg">
-                        <div id="vaderScore">180</div>
-                    </button>
+                 <div id="vaderDiv">
+                    <button id="vaderButton"></button>
                 </div>
             </div>
 
             <div class="col-sm-3">
-                 <div id="mauldiv">
-                    <button id="MaulButton" onClick="choseCharacter(this.id)">
-                        <h5 id ="names">Darth Maul</h5>
-                        <img id = "maul" src ="assets/images/maul.jpg">
-                        <div id="maulScore">160</div>
-                    </button>
+                 <div id="maulDiv">
+                    <button id="maulButton"></button>
                 </div>
-            </div>
-
-        </div>        
-    </div>  
+            </div>     
+        </div>  
 
     <!-- At the bottom of the page is the music  -->
   <!--   <div class="footer">
@@ -141,7 +123,7 @@
     </div> -->
     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
